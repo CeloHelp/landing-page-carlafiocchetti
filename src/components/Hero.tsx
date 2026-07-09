@@ -27,7 +27,7 @@ export function Hero() {
           </div>
         </div>
 
-        <figure className="relative rounded-[18px] border border-border bg-surface p-2.5 shadow-soft after:absolute after:right-6 after:bottom-[-18px] after:h-[34px] after:w-[118px] after:rounded-full after:border after:border-accent after:bg-background">
+        <figure className="relative rounded-[18px] border border-border bg-surface p-2.5 shadow-soft">
           <Image
             src="/assets/carla_limpeza_pele.jpg"
             alt="Carla Fiocchetti realizando limpeza de pele profissional em ambiente de estética"
