@@ -5,7 +5,7 @@ export function Footer() {
   return (
     <footer className="relative overflow-hidden bg-foreground py-8 pt-[34px] text-surface after:pointer-events-none after:absolute after:right-[-34px] after:bottom-[-48px] after:h-[180px] after:w-[180px] after:border after:border-surface/10 after:opacity-70 after:content-['']">
       <Container className="relative z-[1] grid gap-[18px] md:grid-cols-[auto_1fr] md:items-center">
-        <Image
+       <Image
           src="/assets/simbolo_cf_claro.png"
           alt="Carla Fiocchetti Estética Facial Personalizada"
           width={200}

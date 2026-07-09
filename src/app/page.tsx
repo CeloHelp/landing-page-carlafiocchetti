@@ -1,6 +1,7 @@
 import { AboutSection } from "@/components/AboutSection";
 import { Benefits } from "@/components/Benefits";
 import { ExperienceBlock } from "@/components/ExperienceBlock";
+import { FAQSection } from "@/components/FAQSection";
 import { FinalCTA } from "@/components/FinalCTA";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { Footer } from "@/components/Footer";
@@ -22,6 +23,7 @@ export default function Home() {
         <ExperienceBlock />
         <AboutSection />
         <Testimonials />
+        <FAQSection />
         <FinalCTA />
       </main>
       <Footer />
