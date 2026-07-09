@@ -6,11 +6,11 @@ export function Footer() {
     <footer className="relative overflow-hidden bg-foreground py-8 pt-[34px] text-surface after:pointer-events-none after:absolute after:right-[-34px] after:bottom-[-48px] after:h-[180px] after:w-[180px] after:border after:border-surface/10 after:opacity-70 after:content-['']">
       <Container className="relative z-[1] grid gap-[18px] md:grid-cols-[auto_1fr] md:items-center">
         <Image
-          src="/assets/logo_horizontal_transparente.png"
+          src="/assets/simbolo_cf_claro.png"
           alt="Carla Fiocchetti Estética Facial Personalizada"
-          width={380}
-          height={132}
-          className="h-auto w-[190px]"
+          width={200}
+          height={200}
+          className="h-auto w-[100px]"
         />
         <div className="grid gap-1">
           <strong className="font-serif text-[22px] font-semibold leading-[1.15] tracking-[-0.01em]">
