@@ -1,44 +1,51 @@
 import { MotionSection } from "./MotionSection";
 import { Container, Eyebrow, Heading } from "./Section";
 
-/*
-  ATENÇÃO — Respostas provisórias
-
-  As respostas abaixo são placeholder (Lorem ipsum) e devem ser substituídas
-  após validação com a cliente Carla Fiocchetti.
-
-  Regras para substituição:
-  - Não adicionar recomendações médicas, promessas de resultado
-    ou orientações técnicas definitivas sem respaldo da profissional.
-  - Manter tom acolhedor e informativo, coerente com o restante da landing.
-  - Validar cada resposta com a cliente antes de publicar.
-*/
-
 const faqs = [
   {
-    question: "Para quem a limpeza de pele é indicada?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    question: "O que torna a limpeza de pele da Carla diferente?",
+    answer: [
+      "Nossa limpeza de pele vai muito além da extração. Cada atendimento é personalizado após uma avaliação da pele e pode associar LED/Laser e ativos cosméticos de alta performance para potencializar os resultados, sempre respeitando as necessidades individuais de cada paciente.",
+    ],
   },
   {
-    question: "A limpeza de pele dói?",
-    answer:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    question: "A limpeza agride a pele?",
+    answer: [
+      "Não. Todo o protocolo é realizado respeitando a barreira cutânea, promovendo uma limpeza profunda sem agressões desnecessárias. O objetivo é preservar a saúde da pele enquanto removemos impurezas e comedões de forma segura.",
+    ],
   },
   {
-    question: "De quanto em quanto tempo devo fazer?",
-    answer:
-      "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.",
+    question: "A pele fica muito marcada depois da limpeza?",
+    answer: [
+      "Utilizamos um protocolo com dupla emoliência, que facilita a extração dos cravos e reduz o trauma durante o procedimento.",
+      "É normal ocorrer uma leve vermelhidão logo após a sessão, mas ela costuma desaparecer em poucas horas, proporcionando uma recuperação mais confortável.",
+    ],
   },
   {
-    question: "Posso fazer se tenho acne ou pele sensível?",
-    answer:
-      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.",
+    question: "A limpeza é igual para todo mundo?",
+    answer: [
+      "Não. Cada pele possui características, necessidades e objetivos diferentes.",
+      "Por isso, todos os atendimentos são personalizados após uma análise detalhada da pele, garantindo um protocolo adequado para cada paciente.",
+    ],
   },
   {
-    question: "O que devo evitar após a limpeza de pele?",
-    answer:
-      "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi.",
+    question: "Com que frequência devo fazer a limpeza de pele?",
+    answer: [
+      "Em geral, recomenda-se realizar uma sessão a cada 30 a 60 dias, mas a frequência ideal depende das características da sua pele e será definida durante a avaliação.",
+    ],
+  },
+  {
+    question: "Quem realiza o procedimento?",
+    answer: [
+      "O atendimento é realizado por Carla Fiocchetti, esteticista e graduanda em Biomedicina, com formação contínua em tratamentos faciais e protocolos personalizados, sempre priorizando segurança, técnica e cuidado individualizado.",
+    ],
+  },
+  {
+    question: "Como saber qual protocolo é ideal para mim?",
+    answer: [
+      "Tudo começa com uma avaliação profissional.",
+      "Antes do procedimento, analisamos cuidadosamente sua pele para definir o protocolo mais indicado e oferecer um tratamento personalizado, respeitando suas necessidades e objetivos.",
+    ],
   },
 ];
 
@@ -52,12 +59,12 @@ export function FAQSection() {
         <div className="mb-[26px] grid gap-4">
           <Eyebrow>Dúvidas frequentes</Eyebrow>
           <Heading id="faq-title">
-            Perguntas comuns antes de agendar
+            Perguntas frequentes
           </Heading>
           <p className="max-w-[65ch] text-[clamp(17px,4vw,21px)] leading-[1.55] text-[color-mix(in_srgb,var(--foreground)_82%,var(--surface))]">
-            Selecionamos as perguntas mais frequentes para ajudar na sua
-            decisão. As respostas serão complementadas em breve com a
-            orientação da Carla.
+            Ainda ficou com alguma dúvida? Selecionamos as perguntas mais
+            comuns sobre nossa limpeza de pele para que você conheça melhor o
+            procedimento antes da sua avaliação.
           </p>
         </div>
 
@@ -68,9 +75,11 @@ export function FAQSection() {
               className="grid gap-3 rounded-brand border border-border bg-surface p-6 shadow-card"
             >
               <Heading level={3}>{faq.question}</Heading>
-              <p className="text-[color-mix(in_srgb,var(--foreground)_78%,var(--surface))]">
-                {faq.answer}
-              </p>
+              <div className="grid gap-3 text-[color-mix(in_srgb,var(--foreground)_78%,var(--surface))]">
+                {faq.answer.map((paragraph) => (
+                  <p key={paragraph}>{paragraph}</p>
+                ))}
+              </div>
             </article>
           ))}
         </div>
