@@ -13,9 +13,9 @@ type ButtonProps = {
 
 const variantClasses = {
   primary:
-    "border-foreground bg-foreground text-surface shadow-[0_12px_28px_color-mix(in_srgb,var(--foreground)_18%,transparent)] hover:shadow-[0_16px_34px_color-mix(in_srgb,var(--foreground)_22%,transparent)]",
-  secondary: "border-foreground bg-surface text-foreground shadow-none",
-  light: "border-surface bg-surface text-foreground shadow-none",
+    "border-foreground bg-foreground text-surface shadow-[0_12px_28px_color-mix(in_srgb,var(--foreground)_18%,transparent)] hover:bg-moss hover:shadow-[0_16px_34px_color-mix(in_srgb,var(--foreground)_22%,transparent)]",
+  secondary: "border-foreground bg-surface text-foreground shadow-none hover:bg-muted",
+  light: "border-surface bg-surface text-foreground shadow-none hover:bg-background",
 };
 
 export function Button({
@@ -32,7 +32,7 @@ export function Button({
       rel="noopener noreferrer"
       aria-label={ariaLabel ?? "Agendar limpeza de pele pelo WhatsApp"}
       onClick={() => trackWhatsAppClick(source)}
-      className={`inline-flex min-h-13 items-center justify-center gap-2.5 rounded-brand border px-5 py-[15px] text-sm font-bold leading-none tracking-[0.02em] no-underline transition duration-200 ease-out hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-accent ${variantClasses[variant]} ${className}`}
+      className={`inline-flex min-h-13 items-center justify-center gap-2.5 rounded-brand border px-5 py-[15px] text-sm font-semibold leading-none tracking-[0.02em] no-underline transition duration-200 ease-out hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-accent ${variantClasses[variant]} ${className}`}
     >
       <WhatsAppIcon />
       <span>{children}</span>

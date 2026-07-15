@@ -13,7 +13,7 @@ export function Container({ children, className = "" }: SectionProps) {
 
 export function Eyebrow({ children }: { children: React.ReactNode }) {
   return (
-    <p className="mb-3.5 inline-flex items-center gap-2 text-xs font-bold uppercase leading-tight tracking-[0.08em] text-foreground before:h-px before:w-7 before:bg-accent">
+    <p className="mb-3.5 inline-flex items-center gap-2 text-xs font-semibold uppercase leading-tight tracking-[0.08em] text-foreground before:h-px before:w-7 before:bg-accent">
       {children}
     </p>
   );
@@ -31,17 +31,17 @@ export function Heading({
   className?: string;
 }) {
   const Tag = `h${level}` as const;
-  const size =
+  const typography =
     level === 1
-      ? "max-w-[9.6em] text-[clamp(42px,11vw,74px)]"
+      ? "max-w-[9.6em] text-[clamp(42px,11vw,74px)] leading-[1.05]"
       : level === 2
-        ? "text-[clamp(32px,7vw,52px)]"
-        : "text-[22px] tracking-[-0.01em]";
+        ? "text-[clamp(32px,7vw,52px)] leading-[1.15]"
+        : "text-[22px] leading-[1.15] tracking-[-0.01em]";
 
   return (
     <Tag
       id={id}
-      className={`text-balance font-serif font-semibold leading-[1.08] tracking-[-0.018em] ${size} ${className}`}
+      className={`text-balance font-serif font-semibold tracking-[-0.018em] ${typography} ${className}`}
     >
       {children}
     </Tag>
@@ -51,7 +51,7 @@ export function Heading({
 export function Lead({ children, className = "" }: SectionProps) {
   return (
     <p
-      className={`max-w-[65ch] text-[clamp(17px,4vw,21px)] leading-[1.55] text-[color-mix(in_srgb,var(--foreground)_82%,var(--surface))] ${className}`}
+      className={`max-w-[65ch] text-[clamp(17px,4vw,21px)] leading-[1.55] text-text-secondary ${className}`}
     >
       {children}
     </p>

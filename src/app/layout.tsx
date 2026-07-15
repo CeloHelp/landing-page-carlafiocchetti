@@ -1,5 +1,18 @@
 import type { Metadata } from "next";
+import { Cormorant_Garamond, Raleway } from "next/font/google";
 import "./globals.css";
+
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ["latin"],
+  variable: "--font-display",
+  weight: ["500", "600", "700"],
+});
+
+const raleway = Raleway({
+  subsets: ["latin"],
+  variable: "--font-body",
+  weight: ["400", "500", "600", "700"],
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -32,7 +45,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className="h-full antialiased">
+    <html
+      lang="pt-BR"
+      className={`${cormorantGaramond.variable} ${raleway.variable} h-full antialiased`}
+    >
       <body className="min-h-full">{children}</body>
     </html>
   );

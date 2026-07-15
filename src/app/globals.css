@@ -1,13 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f7f3ea;
+  --background: #e8e1d0;
   --surface: #ffffff;
-  --foreground: #3e4432;
-  --muted: #efc9bc;
-  --border: #e4d8ca;
-  --accent: #c9a86a;
-  --accent-secondary: #efc9bc;
+  --foreground: #313427;
+  --moss: #454837;
+  --muted: #f5f1e8;
+  --border: #d5cebc;
+  --accent: #454837;
+  --accent-secondary: #f5f1e8;
+  --text-secondary: #696b5e;
   --container: 1120px;
 }
 
@@ -16,11 +18,13 @@
   --color-surface: var(--surface);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
+  --color-moss: var(--moss);
   --color-border: var(--border);
   --color-accent: var(--accent);
   --color-accent-secondary: var(--accent-secondary);
-  --font-sans: "Avenir Next", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
-  --font-serif: Georgia, "Times New Roman", serif;
+  --color-text-secondary: var(--text-secondary);
+  --font-sans: var(--font-body), sans-serif;
+  --font-serif: var(--font-display), serif;
   --radius-brand: 8px;
   --shadow-soft: 0 18px 48px color-mix(in srgb, var(--foreground) 10%, transparent);
   --shadow-card: 0 14px 34px color-mix(in srgb, var(--foreground) 8%, transparent);
@@ -38,11 +42,18 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Avenir Next", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-body), sans-serif;
   font-size: 16px;
-  line-height: 1.58;
+  line-height: 1.6;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display), serif;
+  font-weight: 600;
 }
 
 @media (min-width: 1024px) {
