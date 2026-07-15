@@ -25,7 +25,7 @@ const benefits = [
   },
   {
     number: "05",
-    title: "Cosméticos de alta performance",
+    title: "Ativos de alta performance",
     text: "Uso de ativos selecionados para complementar o protocolo com segurança e qualidade.",
   },
   {
