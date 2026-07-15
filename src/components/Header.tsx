@@ -4,7 +4,7 @@ import { Container } from "./Section";
 export function Header() {
   return (
     <header className="relative z-10 py-[18px] pb-2.5">
-      <Container className="flex items-center justify-between gap-5">
+      <Container className="flex items-center justify-center">
         <a
           href="#inicio"
           aria-label="Carla Fiocchetti - início"
@@ -16,7 +16,7 @@ export function Header() {
             width={380}
             height={132}
             priority
-            className="h-auto w-[min(220px,58vw)]"
+            className="h-auto w-[205px] sm:w-[215px] lg:w-[230px]"
           />
         </a>
       </Container>
