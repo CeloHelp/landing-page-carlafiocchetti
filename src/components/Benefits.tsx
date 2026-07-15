@@ -5,23 +5,33 @@ import { Container, Eyebrow, Heading } from "./Section";
 const benefits = [
   {
     number: "01",
-    title: "Avaliação da pele",
-    text: "Cada pele é analisada de forma individual para receber o cuidado adequado.",
+    title: "Avaliação individual da pele",
+    text: "Cada pele é analisada antes do procedimento para definir o cuidado mais adequado.",
   },
   {
     number: "02",
-    title: "Cuidado personalizado",
-    text: "O protocolo é adaptado de acordo com as necessidades da sua pele.",
+    title: "Protocolo personalizado",
+    text: "O atendimento é adaptado às necessidades da sua pele, sem seguir um modelo único para todos.",
   },
   {
     number: "03",
-    title: "Atendimento profissional",
-    text: "Técnica, cuidado e experiência em cada etapa do atendimento.",
+    title: "Dupla emoliência",
+    text: "Técnica utilizada para facilitar a extração e tornar o processo mais confortável.",
   },
   {
     number: "04",
-    title: "Ambiente preparado",
-    text: "Conforto, segurança e atenção aos detalhes para uma experiência tranquila.",
+    title: "Respeito à barreira cutânea",
+    text: "A limpeza é feita com cuidado para preservar a saúde e o equilíbrio da pele.",
+  },
+  {
+    number: "05",
+    title: "Cosméticos de alta performance",
+    text: "Uso de ativos selecionados para complementar o protocolo com segurança e qualidade.",
+  },
+  {
+    number: "06",
+    title: "LED/Laser quando indicado",
+    text: "Tecnologias podem ser associadas ao atendimento conforme a avaliação profissional.",
   },
 ];
 
@@ -34,11 +44,11 @@ export function Benefits() {
           <Heading id="benefits-title">Muito além da extração de cravos</Heading>
         </div>
 
-        <div className="grid gap-3.5 md:grid-cols-2">
+        <div className="grid gap-3.5 md:grid-cols-2 lg:grid-cols-3">
           {benefits.map((benefit) => (
             <article
               key={benefit.number}
-              className="grid gap-3 rounded-brand border border-border bg-surface p-[22px] shadow-card lg:min-h-[212px]"
+              className="grid gap-3 rounded-brand border border-border bg-surface p-[22px] shadow-card lg:min-h-[236px]"
             >
               <span className="grid h-[34px] w-[34px] place-items-center rounded-full border border-border text-xs font-bold tracking-[0.08em] text-accent">
                 {benefit.number}
