@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "./Button";
 import { Container } from "./Section";
 
 export function Header() {
@@ -20,14 +19,6 @@ export function Header() {
             className="h-auto w-[min(190px,52vw)]"
           />
         </a>
-        <Button
-          source="header"
-          variant="secondary"
-          className="hidden min-h-11 px-4 py-3 text-[13px] md:inline-flex"
-          ariaLabel="Falar com Carla Fiocchetti pelo WhatsApp"
-        >
-          WhatsApp
-        </Button>
       </Container>
     </header>
   );
