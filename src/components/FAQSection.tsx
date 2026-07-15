@@ -1,50 +1,48 @@
 import { MotionSection } from "./MotionSection";
+import { Button } from "./Button";
 import { Container, Eyebrow, Heading } from "./Section";
 
 const faqs = [
   {
-    question: "O que torna a limpeza de pele da Carla diferente?",
+    question: "O que torna a limpeza de pele da clínica diferente?",
     answer: [
-      "Nossa limpeza de pele vai muito além da extração. Cada atendimento é personalizado após uma avaliação da pele e pode associar LED/Laser e ativos cosméticos de alta performance para potencializar os resultados, sempre respeitando as necessidades individuais de cada paciente.",
+      "Nossa limpeza de pele vai muito além da extração. Cada atendimento começa com uma análise individual da pele e recebe um protocolo personalizado, que pode associar LED/Laser e ativos cosméticos de alta performance quando indicado.",
+      "O objetivo é proporcionar uma limpeza eficaz, confortável e alinhada às necessidades de cada pele.",
     ],
   },
   {
-    question: "A limpeza agride a pele?",
+    question: "A limpeza agride a pele ou deixa muitas marcas?",
     answer: [
-      "Não. Todo o protocolo é realizado respeitando a barreira cutânea, promovendo uma limpeza profunda sem agressões desnecessárias. O objetivo é preservar a saúde da pele enquanto removemos impurezas e comedões de forma segura.",
+      "O protocolo é realizado respeitando a barreira cutânea e evitando agressões desnecessárias.",
+      "Utilizamos dupla emoliência para facilitar a extração dos cravos e reduzir o trauma durante o procedimento. Pode ocorrer uma leve vermelhidão após a sessão, mas ela normalmente desaparece em poucas horas.",
     ],
   },
   {
-    question: "A pele fica muito marcada depois da limpeza?",
+    question: "A limpeza é personalizada para cada tipo de pele?",
     answer: [
-      "Utilizamos um protocolo com dupla emoliência, que facilita a extração dos cravos e reduz o trauma durante o procedimento.",
-      "É normal ocorrer uma leve vermelhidão logo após a sessão, mas ela costuma desaparecer em poucas horas, proporcionando uma recuperação mais confortável.",
+      "Sim. Cada pele possui características, sensibilidades e necessidades diferentes.",
+      "Antes do procedimento, é realizada uma análise para definir as técnicas, os cosméticos e os cuidados mais adequados para cada pessoa. Por isso, o protocolo não é igual para todos os atendimentos.",
     ],
   },
   {
-    question: "A limpeza é igual para todo mundo?",
+    question: "Os produtos utilizados fazem diferença no resultado?",
     answer: [
-      "Não. Cada pele possui características, necessidades e objetivos diferentes.",
-      "Por isso, todos os atendimentos são personalizados após uma análise detalhada da pele, garantindo um protocolo adequado para cada paciente.",
+      "Sim. Além da técnica utilizada, a qualidade dos cosméticos influencia a segurança, o conforto e os resultados do procedimento.",
+      "Trabalhamos com cosméticos profissionais de alta performance, como Adcos, Bioage e Ellementti, escolhidos de acordo com as necessidades de cada pele. Essa seleção faz parte do nosso protocolo personalizado e contribui para um tratamento mais seguro, confortável e eficaz.",
     ],
   },
   {
     question: "Com que frequência devo fazer a limpeza de pele?",
     answer: [
-      "Em geral, recomenda-se realizar uma sessão a cada 30 a 60 dias, mas a frequência ideal depende das características da sua pele e será definida durante a avaliação.",
+      "Em geral, a limpeza de pele pode ser realizada a cada 30 a 60 dias.",
+      "No entanto, a frequência ideal depende do tipo de pele, da quantidade de comedões, da oleosidade, da rotina de cuidados e dos objetivos de cada pessoa. A recomendação é definida após a avaliação.",
     ],
   },
   {
     question: "Quem realiza o procedimento?",
     answer: [
-      "O atendimento é realizado por Carla Fiocchetti, esteticista e graduanda em Biomedicina, com formação contínua em tratamentos faciais e protocolos personalizados, sempre priorizando segurança, técnica e cuidado individualizado.",
-    ],
-  },
-  {
-    question: "Como saber qual protocolo é ideal para mim?",
-    answer: [
-      "Tudo começa com uma avaliação profissional.",
-      "Antes do procedimento, analisamos cuidadosamente sua pele para definir o protocolo mais indicado e oferecer um tratamento personalizado, respeitando suas necessidades e objetivos.",
+      "O atendimento é realizado por Carla Fiocchetti, esteticista e graduanda em Biomedicina, com formação contínua em tratamentos faciais e protocolos personalizados.",
+      "Cada atendimento é conduzido com atenção individual, técnica e foco na saúde da pele.",
     ],
   },
 ];
@@ -58,13 +56,11 @@ export function FAQSection() {
       <Container>
         <div className="mb-[26px] grid gap-4">
           <Eyebrow>Dúvidas frequentes</Eyebrow>
-          <Heading id="faq-title">
-            Perguntas frequentes
-          </Heading>
+          <Heading id="faq-title">Perguntas Frequentes</Heading>
           <p className="max-w-[65ch] text-[clamp(17px,4vw,21px)] leading-[1.55] text-[color-mix(in_srgb,var(--foreground)_82%,var(--surface))]">
-            Ainda ficou com alguma dúvida? Selecionamos as perguntas mais
-            comuns sobre nossa limpeza de pele para que você conheça melhor o
-            procedimento antes da sua avaliação.
+            Reunimos as principais dúvidas sobre a limpeza de pele para que você
+            conheça melhor o procedimento e se sinta mais segura antes do
+            atendimento.
           </p>
         </div>
 
@@ -83,6 +79,25 @@ export function FAQSection() {
             </article>
           ))}
         </div>
+
+        <aside className="mt-6 grid gap-4 rounded-brand border border-border bg-[color-mix(in_srgb,var(--surface)_78%,var(--background))] p-6 shadow-card md:grid-cols-[1fr_auto] md:items-center md:gap-8">
+          <div className="grid gap-2">
+            <Heading level={3}>Ainda ficou com alguma dúvida?</Heading>
+            <p className="max-w-[62ch] text-[color-mix(in_srgb,var(--foreground)_78%,var(--surface))]">
+              Cada pele possui necessidades diferentes. Converse diretamente com
+              a Carla pelo WhatsApp para esclarecer suas dúvidas e descobrir qual
+              protocolo é mais indicado para você.
+            </p>
+          </div>
+          <Button
+            source="faq"
+            variant="secondary"
+            className="w-full md:w-auto"
+            ariaLabel="Falar com a Carla pelo WhatsApp"
+          >
+            Falar com a Carla pelo WhatsApp
+          </Button>
+        </aside>
       </Container>
     </MotionSection>
   );
