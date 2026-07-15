@@ -6,43 +6,43 @@ const faqs = [
   {
     question: "O que torna a limpeza de pele da clínica diferente?",
     answer: [
-      "Nossa limpeza de pele vai muito além da extração. Cada atendimento começa com uma análise individual da pele e recebe um protocolo personalizado, que pode associar LED/Laser e ativos cosméticos de alta performance quando indicado.",
-      "O objetivo é proporcionar uma limpeza eficaz, confortável e alinhada às necessidades de cada pele.",
+      "A limpeza de pele é conduzida como um cuidado completo, e não apenas como uma etapa de extração.",
+      "O atendimento inclui análise da pele, preparação adequada, extração cuidadosa e finalização com recursos escolhidos para melhorar o conforto e a experiência durante o procedimento. Quando necessário, também podem ser associados LED ou Laser.",
     ],
   },
   {
     question: "A limpeza agride a pele ou deixa muitas marcas?",
     answer: [
-      "O protocolo é realizado respeitando a barreira cutânea e evitando agressões desnecessárias.",
+      "O procedimento é realizado com técnicas que buscam reduzir agressões desnecessárias.",
       "Utilizamos dupla emoliência para facilitar a extração dos cravos e reduzir o trauma durante o procedimento. Pode ocorrer uma leve vermelhidão após a sessão, mas ela normalmente desaparece em poucas horas.",
     ],
   },
   {
     question: "A limpeza é personalizada para cada tipo de pele?",
     answer: [
-      "Sim. Cada pele possui características, sensibilidades e necessidades diferentes.",
-      "Antes do procedimento, é realizada uma análise para definir as técnicas, os cosméticos e os cuidados mais adequados para cada pessoa. Por isso, o protocolo não é igual para todos os atendimentos.",
+      "Sim. Antes de iniciar o procedimento, são observadas características como oleosidade, sensibilidade, quantidade de comedões e condições gerais da pele.",
+      "A partir dessa análise, são definidas as etapas, os recursos e os cuidados mais adequados para aquele atendimento. Por isso, a limpeza não segue exatamente o mesmo protocolo para todas as pessoas.",
     ],
   },
   {
     question: "Os produtos utilizados fazem diferença no resultado?",
     answer: [
-      "Sim. Além da técnica utilizada, a qualidade dos cosméticos influencia a segurança, o conforto e os resultados do procedimento.",
-      "Trabalhamos com cosméticos profissionais de alta performance, como Adcos, Bioage e Ellementti, escolhidos de acordo com as necessidades de cada pele. Essa seleção faz parte do nosso protocolo personalizado e contribui para um tratamento mais seguro, confortável e eficaz.",
+      "Sim. A qualidade e a escolha correta dos cosméticos influenciam diretamente o conforto, a segurança e a resposta da pele ao procedimento.",
+      "Trabalhamos com cosméticos profissionais de alta performance, como Adcos, Bioage e Ellementti, escolhidos de acordo com as necessidades de cada pele. Essa seleção contribui para um tratamento mais seguro, confortável e eficaz.",
     ],
   },
   {
     question: "Com que frequência devo fazer a limpeza de pele?",
     answer: [
       "Em geral, a limpeza de pele pode ser realizada a cada 30 a 60 dias.",
-      "No entanto, a frequência ideal depende do tipo de pele, da quantidade de comedões, da oleosidade, da rotina de cuidados e dos objetivos de cada pessoa. A recomendação é definida após a avaliação.",
+      "Essa frequência pode variar conforme a oleosidade, a quantidade de cravos, a rotina de cuidados, o uso de cosméticos e as necessidades individuais da pele. A orientação ideal é definida durante o atendimento.",
     ],
   },
   {
-    question: "Quem realiza o procedimento?",
+    question: "O que influencia a duração dos resultados da limpeza de pele?",
     answer: [
-      "O atendimento é realizado por Carla Fiocchetti, esteticista e graduanda em Biomedicina, com formação contínua em tratamentos faciais e protocolos personalizados.",
-      "Cada atendimento é conduzido com atenção individual, técnica e foco na saúde da pele.",
+      "A manutenção dos resultados depende das características da pele, da rotina de cuidados em casa, dos cosméticos utilizados e da frequência dos atendimentos.",
+      "Hábitos como higienização adequada, uso de produtos indicados para o tipo de pele e proteção solar ajudam a preservar por mais tempo a sensação de limpeza, maciez e equilíbrio da pele.",
     ],
   },
 ];
@@ -86,7 +86,7 @@ export function FAQSection() {
             <p className="max-w-[62ch] text-[color-mix(in_srgb,var(--foreground)_78%,var(--surface))]">
               Cada pele possui necessidades diferentes. Converse diretamente com
               a Carla pelo WhatsApp para esclarecer suas dúvidas e descobrir qual
-              protocolo é mais indicado para você.
+              cuidado é mais indicado para você.
             </p>
           </div>
           <Button
