@@ -21,6 +21,10 @@ export function Footer() {
           </span>
         </div>
       </Container>
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-[-1px] left-[clamp(24px,6vw,68px)] h-12 w-20 border-t border-r border-surface/15 opacity-70"
+      />
     </footer>
   );
 }
