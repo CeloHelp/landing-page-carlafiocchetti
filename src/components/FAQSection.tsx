@@ -59,7 +59,7 @@ export function FAQSection() {
           <Heading id="faq-title">Perguntas Frequentes</Heading>
           <p className="max-w-[65ch] text-[clamp(17px,4vw,21px)] leading-[1.55] text-[color-mix(in_srgb,var(--foreground)_82%,var(--surface))]">
             Reunimos as principais dúvidas sobre a limpeza de pele para que você
-            conheça melhor o procedimento e se sinta mais segura antes do
+            conheça melhor o procedimento e tenha mais tranquilidade antes do
             atendimento.
           </p>
         </div>
