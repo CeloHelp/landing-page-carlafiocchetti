@@ -25,13 +25,23 @@ export function Button({
   className = "",
   ariaLabel,
 }: ButtonProps) {
+  const whatsAppUrl = getWhatsAppUrl();
+
   return (
     <a
-      href={getWhatsAppUrl()}
+      href={whatsAppUrl ?? undefined}
       target="_blank"
       rel="noopener noreferrer"
       aria-label={ariaLabel ?? "Agendar limpeza de pele pelo WhatsApp"}
-      onClick={() => trackWhatsAppClick(source)}
+      aria-disabled={!whatsAppUrl}
+      onClick={(event) => {
+        if (!whatsAppUrl) {
+          event.preventDefault();
+          return;
+        }
+
+        trackWhatsAppClick(source);
+      }}
       className={`inline-flex min-h-13 items-center justify-center gap-2.5 rounded-brand border px-5 py-[15px] text-sm font-semibold leading-none tracking-[0.02em] no-underline transition duration-200 ease-out hover:-translate-y-0.5 focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-accent ${variantClasses[variant]} ${className}`}
     >
       <WhatsAppIcon />
