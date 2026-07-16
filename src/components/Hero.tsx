@@ -15,7 +15,7 @@ export function Hero() {
             Limpeza de Pele Profissional em Araraquara
           </Heading>
           <Lead>
-            Um cuidado personalizado para remover impurezas, melhorar a textura da pele e deixar sua pele com sensação de limpeza, frescor e renovação.
+            Um cuidado personalizado para remover impurezas, melhorar a textura e devolver à sua pele limpeza, frescor e renovação.
           </Lead>
           <div className="grid justify-items-start gap-3">
             <Button source="hero" ariaLabel="Agendar limpeza de pele pelo WhatsApp">
