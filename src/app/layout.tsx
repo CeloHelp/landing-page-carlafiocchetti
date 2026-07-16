@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { Cormorant_Garamond, Raleway } from "next/font/google";
 import "./globals.css";
 
@@ -44,11 +45,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
+  const hasValidGtmId = gtmId && /^GTM-[A-Za-z0-9]+$/.test(gtmId);
+
   return (
     <html
       lang="pt-BR"
       className={`${cormorantGaramond.variable} ${raleway.variable} h-full antialiased`}
     >
+      {hasValidGtmId ? <GoogleTagManager gtmId={gtmId} /> : null}
       <body className="min-h-full">{children}</body>
     </html>
   );
