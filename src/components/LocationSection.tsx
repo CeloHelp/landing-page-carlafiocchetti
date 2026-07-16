@@ -14,27 +14,44 @@ export function LocationSection() {
         <div className="grid gap-[18px]">
           <Eyebrow>Onde estamos</Eyebrow>
           <Heading id="location-title">Atendimento em Araraquara</Heading>
-          <Lead>
-            A clínica está localizada em Araraquara, em um espaço dedicado ao
-            atendimento estético facial personalizado.
-          </Lead>
+          <div className="grid gap-1.5">
+            <Lead>
+              A clínica está localizada em Araraquara, em um espaço dedicado ao
+              atendimento estético facial personalizado.
+            </Lead>
 
-          <address className="grid gap-1.5 rounded-brand border border-border bg-surface px-5 py-4 not-italic shadow-card">
-            <strong className="font-serif text-xl font-semibold leading-[1.15]">
-              Carla Fiocchetti — Estética Facial Personalizada
-            </strong>
-            <span className="text-text-secondary">R. Maj. Carvalho Filho, 2307</span>
-            <span className="text-text-secondary">
-              Jardim Primavera — Araraquara, SP
-            </span>
-            <span className="text-text-secondary">CEP 14802-425</span>
-          </address>
+            <address className="relative rounded-brand border border-border bg-surface px-5 py-3.5 not-italic shadow-[0_8px_20px_color-mix(in_srgb,var(--foreground)_5%,transparent)]">
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.7"
+                className="absolute top-3.5 right-5 h-[17px] w-[17px] text-text-secondary"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M20 10c0 5-8 11-8 11s-8-6-8-11a8 8 0 1 1 16 0Z" />
+                <circle cx="12" cy="10" r="2.5" />
+              </svg>
+              <strong className="block pr-8 font-serif text-xl font-semibold leading-[1.15]">
+                Carla Fiocchetti
+              </strong>
+              <span className="mt-1.5 block text-sm font-medium text-text-secondary">
+                Estética Facial Personalizada
+              </span>
+              <span className="mt-3 block text-text-secondary">
+                R. Maj. Carvalho Filho, 2307
+              </span>
+              <span className="block text-text-secondary">
+                Jardim Primavera • Araraquara – SP
+              </span>
+            </address>
+          </div>
 
           <a
             href={mapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex min-h-13 w-full items-center justify-center rounded-brand border border-foreground bg-foreground px-5 py-[15px] text-sm font-semibold leading-none tracking-[0.02em] text-surface no-underline shadow-[0_12px_28px_color-mix(in_srgb,var(--foreground)_18%,transparent)] transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-moss hover:shadow-[0_16px_34px_color-mix(in_srgb,var(--foreground)_22%,transparent)] focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-accent sm:w-fit"
+            className="-mt-2 inline-flex min-h-13 w-full items-center justify-center rounded-brand border border-foreground bg-foreground px-5 py-[15px] text-sm font-semibold leading-none tracking-[0.02em] text-surface no-underline shadow-[0_12px_28px_color-mix(in_srgb,var(--foreground)_18%,transparent)] transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-moss hover:shadow-[0_16px_34px_color-mix(in_srgb,var(--foreground)_22%,transparent)] focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-accent sm:w-fit"
           >
             Ver rota no Google Maps
           </a>
