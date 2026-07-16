@@ -16,7 +16,7 @@ export function Header() {
             width={380}
             height={132}
             priority
-            className="h-auto w-[245px] sm:w-[260px] lg:w-[285px]"
+            className="mx-auto h-auto w-[min(280px,82vw)] sm:w-[300px] lg:w-[340px]"
           />
         </a>
       </Container>
