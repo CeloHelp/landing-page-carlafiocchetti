@@ -3,7 +3,7 @@ import { MotionSection } from "./MotionSection";
 import { Container, Eyebrow, Heading } from "./Section";
 
 const items = [
-  "Ambiente limpo, acolhedor e preparado para o atendimento.",
+  "Ambiente acolhedor e preparado para o atendimento.",
   "Conduta profissional, clara e sem promessas exageradas.",
   "Orientações simples para manter a sensação de pele leve após o cuidado.",
 ];
@@ -26,7 +26,7 @@ export function ExperienceBlock() {
         <div className="grid gap-3.5">
           <Eyebrow>Experiência</Eyebrow>
           <Heading id="experience-title">
-            Um atendimento pensado para você se sentir segura
+            Um atendimento pensado para você se sentir à vontade
           </Heading>
           <p className="max-w-[65ch] text-[color-mix(in_srgb,var(--foreground)_78%,var(--surface))]">
             Da avaliação inicial ao cuidado final, a proposta é oferecer uma experiência tranquila, com atenção aos detalhes e respeito ao ritmo de cada pele.

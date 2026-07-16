@@ -12,7 +12,7 @@ export function IndicationSection() {
               Sua pele precisa de um cuidado mais profundo?
             </Heading>
             <Lead>
-              A limpeza de pele é indicada para quem sente a pele com cravos, oleosidade, poros aparentes, textura irregular ou sensação de pele pesada. O atendimento é feito de forma personalizada, respeitando as necessidades de cada pele.
+              A limpeza de pele é indicada para quem apresenta cravos, oleosidade, poros aparentes, textura irregular ou sensação de peso no rosto. O atendimento é personalizado, respeitando as necessidades de cada pessoa.
             </Lead>
           </div>
         </div>
