@@ -93,9 +93,9 @@ export function FAQSection() {
             source="faq"
             variant="secondary"
             className="w-full md:w-auto"
-            ariaLabel="Falar com a Carla pelo WhatsApp"
+            ariaLabel="Fale com nossa equipe pelo WhatsApp"
           >
-            Falar com a Carla pelo WhatsApp
+            Fale com nossa equipe
           </Button>
         </aside>
       </Container>
