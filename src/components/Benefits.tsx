@@ -5,31 +5,26 @@ import { Container, Eyebrow, Heading } from "./Section";
 const benefits = [
   {
     number: "01",
-    title: "Avaliação individual da pele",
-    text: "Cada pele é analisada antes do procedimento para definir o cuidado mais adequado.",
+    title: "Avaliação e plano de cuidados",
+    text: "Antes do procedimento, analisamos as necessidades da sua pele para definir cada etapa do atendimento e orientar os cuidados mais adequados para você.",
   },
   {
     number: "02",
-    title: "Protocolo personalizado",
-    text: "O atendimento é adaptado às necessidades da sua pele, sem seguir um modelo único para todos.",
-  },
-  {
-    number: "03",
     title: "Dupla emoliência",
     text: "Técnica utilizada para facilitar a extração e tornar o processo mais confortável.",
   },
   {
-    number: "04",
+    number: "03",
     title: "Respeito à barreira cutânea",
     text: "A limpeza é feita com cuidado para preservar a saúde e o equilíbrio da pele.",
   },
   {
-    number: "05",
+    number: "04",
     title: "Ativos de alta performance",
     text: "Uso de ativos selecionados para complementar o protocolo com segurança e qualidade.",
   },
   {
-    number: "06",
+    number: "05",
     title: "LED/Laser quando indicado",
     text: "Tecnologias podem ser associadas ao atendimento conforme a avaliação profissional.",
   },
