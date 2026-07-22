@@ -84,9 +84,9 @@ export function FAQSection() {
           <div className="grid gap-2">
             <Heading level={3}>Ainda ficou com alguma dúvida?</Heading>
             <p className="max-w-[62ch] text-[color-mix(in_srgb,var(--foreground)_78%,var(--surface))]">
-              Cada pele possui necessidades diferentes. Converse diretamente com
-              a Carla pelo WhatsApp para esclarecer suas dúvidas e descobrir qual
-              cuidado é mais indicado para você.
+              Cada pele possui necessidades diferentes. Converse com nossa equipe
+              pelo WhatsApp para esclarecer suas dúvidas e entender qual cuidado
+              pode ser mais indicado para você.
             </p>
           </div>
           <Button
