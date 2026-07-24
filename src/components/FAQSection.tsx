@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { MotionSection } from "./MotionSection";
 import { Button } from "./Button";
 import { Container, Eyebrow, Heading } from "./Section";
@@ -48,6 +51,8 @@ const faqs = [
 ];
 
 export function FAQSection() {
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+
   return (
     <MotionSection
       aria-labelledby="faq-title"
@@ -64,20 +69,61 @@ export function FAQSection() {
           </p>
         </div>
 
-        <div className="grid gap-3.5 md:grid-cols-2">
-          {faqs.map((faq) => (
-            <article
-              key={faq.question}
-              className="grid gap-3 rounded-brand border border-border bg-surface p-6 shadow-card"
-            >
-              <Heading level={3}>{faq.question}</Heading>
-              <div className="grid gap-3 text-[color-mix(in_srgb,var(--foreground)_78%,var(--surface))]">
-                {faq.answer.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
-              </div>
-            </article>
-          ))}
+        <div className="border-y border-border">
+          {faqs.map((faq, index) => {
+            const isOpen = openFaqIndex === index;
+            const buttonId = `faq-question-${index}`;
+            const panelId = `faq-answer-${index}`;
+
+            return (
+              <article
+                key={faq.question}
+                className="border-b border-border last:border-b-0"
+              >
+                <h3>
+                  <button
+                    id={buttonId}
+                    type="button"
+                    aria-expanded={isOpen}
+                    aria-controls={panelId}
+                    onClick={() => setOpenFaqIndex(isOpen ? null : index)}
+                    className="flex min-h-16 w-full items-center justify-between gap-5 py-5 text-left font-serif text-[clamp(19px,4vw,22px)] font-semibold leading-[1.2] tracking-[-0.01em] text-foreground outline-none transition-colors duration-200 hover:text-moss focus-visible:rounded-brand focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-4 focus-visible:ring-offset-background"
+                  >
+                    <span className="min-w-0">{faq.question}</span>
+                    <svg
+                      aria-hidden="true"
+                      viewBox="0 0 16 16"
+                      className={`size-4 shrink-0 transition-transform duration-300 ease-out motion-reduce:transition-none ${isOpen ? "rotate-180" : "rotate-0"}`}
+                    >
+                      <path
+                        d="m3 6 5 5 5-5"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
+                      />
+                    </svg>
+                  </button>
+                </h3>
+                <div
+                  id={panelId}
+                  role="region"
+                  aria-hidden={!isOpen}
+                  aria-labelledby={buttonId}
+                  className={`grid overflow-hidden transition-[grid-template-rows] duration-300 ease-out motion-reduce:transition-none ${isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}
+                >
+                  <div className="min-h-0">
+                    <div className="grid gap-3 pb-5 text-[color-mix(in_srgb,var(--foreground)_78%,var(--surface))]">
+                      {faq.answer.map((paragraph) => (
+                        <p key={paragraph}>{paragraph}</p>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </article>
+            );
+          })}
         </div>
 
         <aside className="mt-6 grid gap-4 rounded-brand border border-border bg-[color-mix(in_srgb,var(--surface)_78%,var(--background))] p-6 shadow-card md:grid-cols-[1fr_auto] md:items-center md:gap-8">
