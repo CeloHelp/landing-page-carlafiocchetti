@@ -15,7 +15,7 @@ export function FinalCTA() {
             Cuide da sua pele com atendimento personalizado
           </Heading>
           <p className="relative z-[1] max-w-[65ch] text-[color-mix(in_srgb,var(--surface)_82%,var(--foreground))]">
-            Clique no botão abaixo e fale pelo WhatsApp para verificar horários disponíveis e tirar suas dúvidas.
+            Converse com nossa equipe pelo WhatsApp para verificar horários disponíveis e esclarecer suas dúvidas.
           </p>
           <Button source="final_cta" variant="light" className="relative z-[1] w-full sm:w-fit">
             Consultar horários e tirar dúvidas

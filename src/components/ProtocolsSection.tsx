@@ -26,22 +26,22 @@ const protocols = [
       "Análise personalizada da pele",
       "Emoliência e extração",
       "Alta frequência, com ação bactericida e cicatrizante",
-      "Fototerapia com LED ou laser para acalmar, regenerar e potencializar os resultados",
+      "Fototerapia com LED ou laser, quando indicada, como recurso complementar ao protocolo.",
       "Peeling iluminador para renovação e glow imediato",
       "Infusão dérmica de ácido hialurônico e ativos personalizados",
       "Massagem com Iced Globes para acalmar, drenar e devolver luminosidade",
       "Máscara finalizadora e proteção",
     ],
-    accent: "border-moss bg-[color-mix(in_srgb,var(--surface)_86%,var(--background))] shadow-soft",
+    accent: "border-moss bg-[color-mix(in_srgb,var(--surface)_86%,var(--background))] shadow-soft ring-1 ring-moss/20",
   },
   {
     name: "Signature",
     positioning: "Tratamento premium",
-    description: "Indicada para quem deseja ir além da limpeza e iniciar um cuidado voltado à firmeza, estímulo de colágeno e rejuvenescimento.",
+    description: "Indicada para quem deseja ir além da limpeza e incluir um cuidado complementar voltado à aparência de firmeza e rejuvenescimento da pele.",
     inclusion: "Inclui tudo da Diamond + criofrequência",
     price: "R$ 320",
     items: [
-      "Criofrequência para efeito tensor imediato e melhora progressiva da flacidez",
+      "Criofrequência como recurso complementar voltado ao efeito tensor e à aparência da flacidez.",
     ],
     accent: "border-foreground/45 bg-[color-mix(in_srgb,var(--surface)_94%,var(--foreground))]",
   },
@@ -63,11 +63,11 @@ export function ProtocolsSection() {
           </p>
         </div>
 
-        <div className="grid items-stretch gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid items-start gap-5 md:grid-cols-2 md:items-end lg:grid-cols-3 xl:grid-cols-[minmax(0,30fr)_minmax(0,36fr)_minmax(0,30fr)]">
           {protocols.map((protocol) => (
             <article
               key={protocol.name}
-              className={`flex min-w-0 flex-col rounded-2xl border p-6 shadow-card ${protocol.accent}`}
+              className={`flex w-full min-w-0 flex-col rounded-2xl border p-6 shadow-card ${protocol.accent}`}
             >
               <div className="mb-5 flex min-h-8 items-start justify-between gap-3">
                 <span className="text-xs font-bold uppercase tracking-[0.08em] text-accent">
@@ -90,7 +90,7 @@ export function ProtocolsSection() {
                 </p>
               ) : null}
 
-              <ul className="my-6 grid flex-1 gap-3 text-sm leading-relaxed text-[color-mix(in_srgb,var(--foreground)_82%,var(--surface))]">
+              <ul className="my-6 grid gap-3 text-sm leading-relaxed text-[color-mix(in_srgb,var(--foreground)_82%,var(--surface))]">
                 {protocol.items.map((item) => (
                   <li key={item} className="grid grid-cols-[12px_1fr] gap-2.5">
                     <span aria-hidden="true" className="mt-[9px] h-1.5 w-1.5 rounded-full bg-accent" />
@@ -108,7 +108,7 @@ export function ProtocolsSection() {
 
         <div className="mt-7 grid justify-items-start gap-5 rounded-brand border border-border bg-surface p-5 md:grid-cols-[1fr_auto] md:items-center md:gap-8">
           <p className="max-w-[70ch] text-sm leading-relaxed text-text-secondary">
-            Todos os protocolos incluem limpeza profunda e extração. A indicação mais adequada é definida após avaliação da pele.
+            Todos os protocolos incluem limpeza profunda e extração. A indicação do protocolo e dos recursos complementares é definida após avaliação da pele.
           </p>
           <Button
             source="pricing_section"

@@ -34,7 +34,7 @@ export function Hero() {
               </a>
             </div>
             <p className="text-[13px] font-semibold tracking-[0.01em] text-[color-mix(in_srgb,var(--foreground)_76%,var(--surface))]">
-              Atendimento personalizado • Avaliação 5 estrelas • Atendimento em Araraquara
+              Cuidado individualizado • Nota 5 estrelas no Google • Atendimento em Araraquara
             </p>
           </div>
         </div>

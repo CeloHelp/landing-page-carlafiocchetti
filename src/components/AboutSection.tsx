@@ -41,7 +41,7 @@ export function AboutSection() {
             className="w-full sm:w-fit"
             ariaLabel="Conversar com nossa equipe pelo WhatsApp"
           >
-            Conversar com nossa equipe
+            Conversar com nossa equipe pelo WhatsApp
           </Button>
         </div>
       </Container>
