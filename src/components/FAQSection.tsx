@@ -42,30 +42,6 @@ const faqs = [
       "A frequência é individual e pode variar conforme oleosidade, presença de cravos, rotina de cuidados e resposta da pele. A orientação mais adequada é definida após avaliação profissional.",
     ],
   },
-  {
-    question: "Quais produtos e recursos podem ser utilizados?",
-    answer: [
-      "Os protocolos utilizam cosméticos profissionais escolhidos conforme a avaliação. Recursos complementares, como alta frequência, LED ou laser, podem ser associados quando indicados para as necessidades da pele.",
-    ],
-  },
-  {
-    question: "Como consultar valores e horários?",
-    answer: [
-      "Os valores dos protocolos Gold, Diamond e Signature estão disponíveis nesta página. Para verificar horários, converse com nossa equipe pelo WhatsApp.",
-    ],
-  },
-  {
-    question: "Posso usar maquiagem após o procedimento?",
-    answer: [
-      "Essa orientação depende das condições da pele e dos cuidados realizados na sessão. Confirme a recomendação individual com a profissional ao final do atendimento.",
-    ],
-  },
-  {
-    question: "Onde é realizado o atendimento em Araraquara?",
-    answer: [
-      "O atendimento é realizado na Carla Fiocchetti Estética Facial Personalizada, na R. Maj. Carvalho Filho, 2307, Jardim Primavera, em Araraquara, SP.",
-    ],
-  },
 ];
 
 export function FAQSection() {
