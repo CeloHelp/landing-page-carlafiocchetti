@@ -7,45 +7,63 @@ import { Container, Eyebrow, Heading } from "./Section";
 
 const faqs = [
   {
-    question: "O que torna a limpeza de pele da clínica diferente?",
+    question: "A limpeza de pele inclui extração de cravos?",
     answer: [
-      "A limpeza de pele é conduzida como um cuidado completo, e não apenas como uma etapa de extração.",
-      "O atendimento inclui análise da pele, preparação adequada, extração cuidadosa e finalização com recursos escolhidos para melhorar o conforto e a experiência durante o procedimento. Quando necessário, também podem ser associados LED ou Laser.",
+      "Sim. Todos os protocolos incluem higienização profunda e extração cuidadosa de cravos, adaptada às condições e sensibilidades observadas na avaliação da pele.",
     ],
   },
   {
-    question: "A limpeza agride a pele ou deixa muitas marcas?",
+    question: "O procedimento dói?",
     answer: [
-      "O procedimento é realizado com técnicas que buscam reduzir agressões desnecessárias.",
-      "Utilizamos dupla emoliência para facilitar a extração dos cravos e reduzir o trauma durante o procedimento. Pode ocorrer uma leve vermelhidão após a sessão, mas ela normalmente desaparece em poucas horas.",
+      "A sensibilidade varia de pessoa para pessoa e conforme a região da pele. A preparação e a extração são realizadas com cuidado para favorecer o conforto, respeitando áreas mais sensíveis.",
     ],
   },
   {
-    question: "A limpeza é personalizada para cada tipo de pele?",
+    question: "A pele fica vermelha depois?",
     answer: [
-      "Sim. Antes de iniciar o procedimento, são observadas características como oleosidade, sensibilidade, quantidade de comedões e condições gerais da pele.",
-      "A partir dessa análise, são definidas as etapas, os recursos e os cuidados mais adequados para aquele atendimento. Por isso, a limpeza não segue exatamente o mesmo protocolo para todas as pessoas.",
+      "Pode ocorrer vermelhidão temporária após a extração. A intensidade e a recuperação variam conforme a sensibilidade e as necessidades de cada pele, por isso as orientações finais são individualizadas.",
     ],
   },
   {
-    question: "Os produtos utilizados fazem diferença no resultado?",
+    question: "A limpeza de pele é indicada para pele oleosa ou sensível?",
     answer: [
-      "Sim. A qualidade e a escolha correta dos cosméticos influenciam diretamente o conforto, a segurança e a resposta da pele ao procedimento.",
-      "Trabalhamos com cosméticos profissionais de alta performance, como Adcos, Bioage e Ellementti, escolhidos de acordo com as necessidades de cada pele. Essa seleção contribui para um tratamento mais seguro, confortável e eficaz.",
+      "O atendimento pode ser adaptado para diferentes características de pele. Antes do procedimento, a avaliação considera oleosidade, sensibilidade e outras necessidades para orientar os cuidados mais adequados.",
+    ],
+  },
+  {
+    question: "Quanto tempo dura o atendimento?",
+    answer: [
+      "A duração depende do protocolo e das necessidades identificadas na avaliação. Converse com nossa equipe para confirmar a estimativa do atendimento escolhido.",
     ],
   },
   {
     question: "Com que frequência devo fazer a limpeza de pele?",
     answer: [
-      "Em geral, a limpeza de pele pode ser realizada a cada 30 a 60 dias.",
-      "Essa frequência pode variar conforme a oleosidade, a quantidade de cravos, a rotina de cuidados, o uso de cosméticos e as necessidades individuais da pele. A orientação ideal é definida durante o atendimento.",
+      "A frequência é individual e pode variar conforme oleosidade, presença de cravos, rotina de cuidados e resposta da pele. A orientação mais adequada é definida após avaliação profissional.",
     ],
   },
   {
-    question: "O que influencia a duração dos resultados da limpeza de pele?",
+    question: "Quais produtos e recursos podem ser utilizados?",
     answer: [
-      "A manutenção dos resultados depende das características da pele, da rotina de cuidados em casa, dos cosméticos utilizados e da frequência dos atendimentos.",
-      "Hábitos como higienização adequada, uso de produtos indicados para o tipo de pele e proteção solar ajudam a preservar por mais tempo a sensação de limpeza, maciez e equilíbrio da pele.",
+      "Os protocolos utilizam cosméticos profissionais escolhidos conforme a avaliação. Recursos complementares, como alta frequência, LED ou laser, podem ser associados quando indicados para as necessidades da pele.",
+    ],
+  },
+  {
+    question: "Como consultar valores e horários?",
+    answer: [
+      "Os valores dos protocolos Gold, Diamond e Signature estão disponíveis nesta página. Para verificar horários, converse com nossa equipe pelo WhatsApp.",
+    ],
+  },
+  {
+    question: "Posso usar maquiagem após o procedimento?",
+    answer: [
+      "Essa orientação depende das condições da pele e dos cuidados realizados na sessão. Confirme a recomendação individual com a profissional ao final do atendimento.",
+    ],
+  },
+  {
+    question: "Onde é realizado o atendimento em Araraquara?",
+    answer: [
+      "O atendimento é realizado na Carla Fiocchetti Estética Facial Personalizada, na R. Maj. Carvalho Filho, 2307, Jardim Primavera, em Araraquara, SP.",
     ],
   },
 ];
@@ -139,9 +157,9 @@ export function FAQSection() {
             source="faq"
             variant="secondary"
             className="w-full md:w-auto"
-            ariaLabel="Fale com nossa equipe pelo WhatsApp"
+            ariaLabel="Conversar com nossa equipe pelo WhatsApp"
           >
-            Fale com nossa equipe
+            Conversar com nossa equipe
           </Button>
         </aside>
       </Container>

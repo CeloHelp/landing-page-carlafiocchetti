@@ -1,32 +1,31 @@
-import { Button } from "./Button";
 import { MotionSection } from "./MotionSection";
 import { Container, Eyebrow, Heading } from "./Section";
 
 const benefits = [
   {
     number: "01",
-    title: "Avaliação e plano de cuidados",
-    text: "Antes do procedimento, analisamos as necessidades da sua pele para definir cada etapa do atendimento e orientar os cuidados mais adequados para você.",
+    title: "Cuidado planejado",
+    text: "A avaliação da pele orienta um plano de cuidados adaptado às suas necessidades.",
   },
   {
     number: "02",
-    title: "Dupla emoliência",
-    text: "Técnica utilizada para facilitar a extração e tornar o processo mais confortável.",
+    title: "Extração mais confortável",
+    text: "A dupla emoliência prepara a pele e facilita uma extração cuidadosa.",
   },
   {
     number: "03",
-    title: "Respeito à barreira cutânea",
-    text: "A limpeza é feita com cuidado para preservar a saúde e o equilíbrio da pele.",
+    title: "Equilíbrio da pele",
+    text: "Cada etapa respeita a barreira cutânea para preservar conforto e proteção.",
   },
   {
     number: "04",
-    title: "Ativos de alta performance",
-    text: "Uso de ativos selecionados para complementar o protocolo com segurança e qualidade.",
+    title: "Ativos profissionais",
+    text: "Cosméticos profissionais complementam o protocolo conforme a avaliação da pele.",
   },
   {
     number: "05",
-    title: "LED/Laser quando indicado",
-    text: "Tecnologias podem ser associadas ao atendimento conforme a avaliação profissional.",
+    title: "Recursos complementares",
+    text: "LED ou laser podem complementar o atendimento quando houver indicação profissional.",
   },
 ];
 
@@ -37,6 +36,9 @@ export function Benefits() {
         <div className="mb-[26px] grid gap-4">
           <Eyebrow>Diferenciais</Eyebrow>
           <Heading id="benefits-title">Muito além da extração de cravos</Heading>
+          <p className="max-w-[65ch] text-text-secondary">
+            Não é uma limpeza de pele padronizada: o atendimento é individualizado, cuidadoso e adaptado às necessidades de cada pele.
+          </p>
         </div>
 
         <div className="grid gap-3.5 md:grid-cols-2 lg:grid-cols-3">
@@ -56,9 +58,6 @@ export function Benefits() {
           ))}
         </div>
 
-        <div className="mt-[22px]">
-          <Button source="benefits">Quero agendar pelo WhatsApp</Button>
-        </div>
       </Container>
     </MotionSection>
   );

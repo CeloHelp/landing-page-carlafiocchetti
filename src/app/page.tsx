@@ -9,8 +9,8 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { IndicationSection } from "@/components/IndicationSection";
 import { LocationSection } from "@/components/LocationSection";
+import { ProtocolsSection } from "@/components/ProtocolsSection";
 import { Testimonials } from "@/components/Testimonials";
-import { TrustBadges } from "@/components/TrustBadges";
 
 export default function Home() {
   return (
@@ -18,12 +18,12 @@ export default function Home() {
       <Header />
       <main id="inicio">
         <Hero />
-        <TrustBadges />
         <IndicationSection />
+        <Testimonials />
         <Benefits />
         <ExperienceBlock />
+        <ProtocolsSection />
         <AboutSection />
-        <Testimonials />
         <FAQSection />
         <LocationSection />
         <FinalCTA />

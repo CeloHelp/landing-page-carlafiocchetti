@@ -26,7 +26,7 @@ export function Testimonials() {
             Quem já cuidou da pele com a Carla recomenda
           </Heading>
           <p className="max-w-[65ch] text-text-secondary">
-            Confira algumas avaliações reais publicadas por pacientes no Google.
+            Confira duas avaliações reais publicadas no Google.
           </p>
         </div>
 
@@ -41,7 +41,6 @@ export function Testimonials() {
                 alt={testimonial.alt}
                 width={980}
                 height={520}
-                loading="eager"
                 sizes="(min-width: 768px) 50vw, calc(100vw - 52px)"
                 className="max-h-[260px] w-full rounded-[6px] border border-border bg-surface object-contain object-top"
               />

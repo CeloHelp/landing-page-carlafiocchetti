@@ -12,13 +12,13 @@ export function FinalCTA() {
             className="pointer-events-none absolute bottom-[-24px] left-[clamp(24px,6vw,52px)] h-20 w-28 border-t border-l border-surface/20 opacity-70"
           />
           <Heading id="final-cta-title" className="relative z-[1]">
-            Agende sua limpeza de pele em Araraquara
+            Cuide da sua pele com atendimento personalizado
           </Heading>
           <p className="relative z-[1] max-w-[65ch] text-[color-mix(in_srgb,var(--surface)_82%,var(--foreground))]">
             Clique no botão abaixo e fale pelo WhatsApp para verificar horários disponíveis e tirar suas dúvidas.
           </p>
-          <Button source="final_cta" variant="light" className="relative z-[1] w-fit">
-            Quero agendar pelo WhatsApp
+          <Button source="final_cta" variant="light" className="relative z-[1] w-full sm:w-fit">
+            Consultar horários e tirar dúvidas
           </Button>
         </div>
       </Container>

@@ -11,11 +11,13 @@ export function trackWhatsAppClick(source: string) {
   window.dataLayer?.push({
     event: "whatsapp_click",
     source,
+    cta_source: source,
   });
 
   window.gtag?.("event", "whatsapp_click", {
     event_category: "conversion",
     event_label: source,
+    cta_source: source,
   });
 }
 
