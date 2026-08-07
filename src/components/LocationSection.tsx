@@ -9,7 +9,11 @@ const mapEmbedUrl =
 
 export function LocationSection() {
   return (
-    <MotionSection aria-labelledby="location-title" className="py-14 md:py-[74px]">
+    <MotionSection
+      id="localizacao"
+      aria-labelledby="location-title"
+      className="scroll-mt-6 py-14 md:py-[74px]"
+    >
       <Container className="grid gap-6 md:grid-cols-[0.82fr_1fr] md:items-center md:gap-10">
         <div className="grid gap-[18px]">
           <Eyebrow>Onde estamos</Eyebrow>

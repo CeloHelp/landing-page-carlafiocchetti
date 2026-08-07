@@ -31,7 +31,11 @@ const benefits = [
 
 export function Benefits() {
   return (
-    <MotionSection aria-labelledby="benefits-title" className="py-14 md:py-[74px]">
+    <MotionSection
+      id="diferenciais"
+      aria-labelledby="benefits-title"
+      className="scroll-mt-6 py-14 md:py-[74px]"
+    >
       <Container>
         <div className="mb-[26px] grid gap-4">
           <Eyebrow>Diferenciais</Eyebrow>

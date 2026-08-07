@@ -49,8 +49,9 @@ export function FAQSection() {
 
   return (
     <MotionSection
+      id="faq"
       aria-labelledby="faq-title"
-      className="py-14 md:py-[74px]"
+      className="scroll-mt-6 py-14 md:py-[74px]"
     >
       <Container>
         <div className="mb-[26px] grid gap-4">

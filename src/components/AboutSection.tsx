@@ -5,7 +5,11 @@ import { Container, Eyebrow, Heading } from "./Section";
 
 export function AboutSection() {
   return (
-    <MotionSection aria-labelledby="about-title" className="py-14 md:py-[74px]">
+    <MotionSection
+      id="sobre"
+      aria-labelledby="about-title"
+      className="scroll-mt-6 py-14 md:py-[74px]"
+    >
       <Container className="grid items-center gap-6 md:grid-cols-[0.86fr_1fr]">
         <figure className="relative rounded-2xl border border-border bg-surface p-2.5 shadow-soft">
           <Image

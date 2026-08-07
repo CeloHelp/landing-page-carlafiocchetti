@@ -32,7 +32,11 @@ const items = [
 
 export function ExperienceBlock() {
   return (
-    <MotionSection aria-labelledby="experience-title" className="py-14 md:py-[74px]">
+    <MotionSection
+      id="experiencia"
+      aria-labelledby="experience-title"
+      className="scroll-mt-6 py-14 md:py-[74px]"
+    >
       <Container className="grid items-start gap-5 md:grid-cols-[1fr_0.86fr]">
         <figure className="rounded-2xl border border-border bg-surface p-2.5 shadow-card md:translate-y-1">
           <Image

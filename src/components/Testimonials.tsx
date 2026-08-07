@@ -16,8 +16,9 @@ const testimonials = [
 export function Testimonials() {
   return (
     <MotionSection
+      id="avaliacoes"
       aria-labelledby="testimonials-title"
-      className="border-y border-border bg-[color-mix(in_srgb,var(--surface)_42%,var(--background))] py-14 md:py-[74px]"
+      className="scroll-mt-6 border-y border-border bg-[color-mix(in_srgb,var(--surface)_42%,var(--background))] py-14 md:py-[74px]"
     >
       <Container>
         <div className="mb-[26px] grid gap-4">

@@ -3,7 +3,11 @@ import { Container, Eyebrow, Heading, Lead } from "./Section";
 
 export function IndicationSection() {
   return (
-    <MotionSection aria-labelledby="care-title" className="py-14 md:py-[74px]">
+    <MotionSection
+      id="indicacoes"
+      aria-labelledby="care-title"
+      className="scroll-mt-6 py-14 md:py-[74px]"
+    >
       <Container>
         <div className="relative overflow-hidden rounded-2xl border border-border bg-[color-mix(in_srgb,var(--surface)_78%,var(--background))] p-[clamp(28px,7vw,52px)] after:absolute after:top-[22px] after:right-[22px] after:h-px after:w-[72px] after:bg-accent">
           <div className="relative z-[1] grid gap-[18px]">
