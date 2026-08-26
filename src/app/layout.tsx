@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
 import { Cormorant_Garamond, Raleway } from "next/font/google";
+import Script from "next/script";
+import { ConsentBanner } from "@/components/ConsentBanner";
+import { CONSENT_BOOTSTRAP_SCRIPT } from "@/lib/consent";
 import "./globals.css";
 
 const cormorantGaramond = Cormorant_Garamond({
@@ -53,8 +56,16 @@ export default function RootLayout({
       lang="pt-BR"
       className={`${cormorantGaramond.variable} ${raleway.variable} h-full antialiased`}
     >
+      <Script
+        id="cookie-consent-bootstrap"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{ __html: CONSENT_BOOTSTRAP_SCRIPT }}
+      />
       {hasValidGtmId ? <GoogleTagManager gtmId={gtmId} /> : null}
-      <body className="min-h-full">{children}</body>
+      <body className="min-h-full">
+        {children}
+        <ConsentBanner />
+      </body>
     </html>
   );
 }
