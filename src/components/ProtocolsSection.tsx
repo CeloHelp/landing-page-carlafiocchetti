@@ -22,15 +22,10 @@ const protocols = [
     description: "Além da limpeza, já entrega tratamento, viço e luminosidade na primeira sessão.",
     price: "R$ 247",
     items: [
-      "Higienização profunda",
-      "Análise personalizada da pele",
-      "Emoliência e extração",
-      "Alta frequência, com ação bactericida e cicatrizante",
-      "Fototerapia com LED ou laser, quando indicada, como recurso complementar ao protocolo.",
-      "Peeling iluminador para renovação e glow imediato",
-      "Infusão dérmica de ácido hialurônico e ativos personalizados",
-      "Massagem com Iced Globes para acalmar, drenar e devolver luminosidade",
-      "Máscara finalizadora e proteção",
+      "Higienização profunda, análise personalizada, emoliência e extração",
+      "Alta frequência, com ação bactericida e cicatrizante + fototerapia com LED ou laser, quando indicada",
+      "Peeling iluminador + infusão dérmica de ácido hialurônico e ativos personalizados",
+      "Massagem com Iced Globes + máscara finalizadora e proteção",
     ],
     accent: "border-moss bg-[color-mix(in_srgb,var(--surface)_86%,var(--background))] shadow-soft ring-1 ring-moss/20",
   },
@@ -57,7 +52,7 @@ export function ProtocolsSection() {
       <Container>
         <div className="mb-8 grid gap-4">
           <Eyebrow>Protocolos e valores</Eyebrow>
-          <Heading id="protocols-title">Qual cuidado combina com a sua pele?</Heading>
+          <Heading id="protocols-title">Protocolos de limpeza de pele</Heading>
           <p className="max-w-[65ch] text-[clamp(17px,4vw,21px)] leading-[1.55] text-text-secondary">
             Conheça os protocolos disponíveis, o que cada um inclui e seus respectivos valores.
           </p>
@@ -90,7 +85,11 @@ export function ProtocolsSection() {
                 </p>
               ) : null}
 
-              <ul className="my-6 grid gap-3 text-sm leading-relaxed text-[color-mix(in_srgb,var(--foreground)_82%,var(--surface))]">
+              <p className="mt-5 border-t border-border pt-5 font-serif text-[32px] font-semibold leading-none tracking-[-0.02em] text-foreground">
+                {protocol.price}
+              </p>
+
+              <ul className="mt-6 grid gap-3 text-sm leading-relaxed text-[color-mix(in_srgb,var(--foreground)_82%,var(--surface))]">
                 {protocol.items.map((item) => (
                   <li key={item} className="grid grid-cols-[12px_1fr] gap-2.5">
                     <span aria-hidden="true" className="mt-[9px] h-1.5 w-1.5 rounded-full bg-accent" />
@@ -99,9 +98,6 @@ export function ProtocolsSection() {
                 ))}
               </ul>
 
-              <p className="border-t border-border pt-5 font-serif text-[32px] font-semibold leading-none tracking-[-0.02em] text-foreground">
-                {protocol.price}
-              </p>
             </article>
           ))}
         </div>
@@ -113,9 +109,9 @@ export function ProtocolsSection() {
           <Button
             source="pricing_section"
             className="w-full md:w-auto"
-            ariaLabel="Verificar horários disponíveis pelo WhatsApp"
+            ariaLabel="Descobrir qual protocolo é ideal pelo WhatsApp"
           >
-            Verificar horários disponíveis
+            Quero saber qual protocolo é ideal para mim
           </Button>
         </div>
       </Container>

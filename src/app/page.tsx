@@ -7,7 +7,6 @@ import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { IndicationSection } from "@/components/IndicationSection";
 import { LocationSection } from "@/components/LocationSection";
 import { ProtocolsSection } from "@/components/ProtocolsSection";
 import { Testimonials } from "@/components/Testimonials";
@@ -18,11 +17,10 @@ export default function Home() {
       <Header />
       <main id="inicio">
         <Hero />
-        <IndicationSection />
         <Testimonials />
+        <ProtocolsSection />
         <Benefits />
         <ExperienceBlock />
-        <ProtocolsSection />
         <AboutSection />
         <FAQSection />
         <LocationSection />

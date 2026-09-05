@@ -15,16 +15,19 @@ export function Hero() {
             Limpeza de Pele Profissional em Araraquara
           </Heading>
           <Lead>
-            Limpeza de pele com avaliação individualizada, higienização e extração cuidadosa, realizada por esteticista com mais de 8 anos de experiência.
+            Avaliação individualizada, extração cuidadosa e protocolos pensados para as necessidades da sua pele.
           </Lead>
+          <p className="w-fit rounded-full border border-accent/35 bg-surface px-4 py-2 text-sm font-bold tracking-[0.01em] text-foreground shadow-card">
+            Protocolos a partir de R$ 190
+          </p>
           <div className="grid justify-items-start gap-3">
             <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
               <Button
                 source="hero_primary"
                 className="w-full sm:w-auto"
-                ariaLabel="Consultar horários e tirar dúvidas pelo WhatsApp"
+                ariaLabel="Consultar horários pelo WhatsApp"
               >
-                Consultar horários e tirar dúvidas
+                Consultar horários no WhatsApp
               </Button>
               <a
                 href="#protocolos-valores"
@@ -34,7 +37,7 @@ export function Hero() {
               </a>
             </div>
             <p className="text-[13px] font-semibold tracking-[0.01em] text-[color-mix(in_srgb,var(--foreground)_76%,var(--surface))]">
-              Cuidado individualizado • Nota 5 estrelas no Google • Atendimento em Araraquara
+              Nota 5 estrelas no Google • +100 avaliações • Atendimento em Araraquara
             </p>
           </div>
         </div>
