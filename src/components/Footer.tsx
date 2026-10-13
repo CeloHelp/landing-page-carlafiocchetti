@@ -1,7 +1,7 @@
 import { CookiePreferencesButton } from "./CookiePreferencesButton";
 import { Container } from "./Section";
 export function Footer() {
-  return <footer className="bg-background py-8 pb-28 md:pb-8">
+  return <footer id="localizacao" className="scroll-mt-6 bg-background py-8 pb-28 md:pb-8">
     <Container className="grid gap-3">
       <p className="font-serif text-2xl">Carla Fiocchetti</p>
       <address className="text-sm not-italic text-text-secondary">Estética facial personalizada<br />R. Maj. Carvalho Filho, 2307<br />Jardim Primavera · Araraquara – SP</address>

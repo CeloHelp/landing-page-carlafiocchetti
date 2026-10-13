@@ -42,7 +42,8 @@ const protocols = [
 
 
 export function ProtocolsSection() {
-  return <section id="protocolos-valores" aria-labelledby="protocols-title" className="scroll-mt-6 py-8 md:py-12">
+  return <section id="protocolos-valores" aria-labelledby="protocols-title" className="relative scroll-mt-6 py-8 md:py-12">
+    <span id="protocolos" aria-hidden="true" className="absolute top-0 scroll-mt-6" />
     <Container>
       <h2 id="protocols-title" className="font-serif text-[30px] font-medium md:text-[40px]">Opções de cuidado</h2>
       <p className="mb-5 mt-3 text-sm text-text-secondary">Todos os protocolos incluem limpeza profunda e extração. A indicação é feita de acordo com a avaliação da sua pele.</p>

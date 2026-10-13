@@ -5,7 +5,8 @@ const faqs = [
   ["Quanto tempo dura o atendimento?", "Varia conforme o protocolo e a sua pele. Confirme a estimativa pelo WhatsApp."],
 ];
 export function FAQSection() {
-  return <section id="duvidas" aria-labelledby="faq-title">
+  return <section id="duvidas" aria-labelledby="faq-title" className="relative scroll-mt-6">
+    <span id="faq" aria-hidden="true" className="absolute top-0 scroll-mt-6" />
     <h2 id="faq-title" className="mb-4 font-serif text-[30px] font-medium leading-tight">Antes de conversar</h2>
     <dl className="grid gap-3">
       {faqs.map(([question, answer]) => <div key={question} className="rounded-lg border border-border p-4"><dt className="text-sm font-medium">{question}</dt><dd className="mt-2 text-sm text-text-secondary">{answer}</dd></div>)}
