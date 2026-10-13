@@ -1,33 +1,25 @@
-import { AboutSection } from "@/components/AboutSection";
-import { Benefits } from "@/components/Benefits";
-import { ExperienceBlock } from "@/components/ExperienceBlock";
 import { FAQSection } from "@/components/FAQSection";
-import { FinalCTA } from "@/components/FinalCTA";
 import { FloatingWhatsApp } from "@/components/FloatingWhatsApp";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { LocationSection } from "@/components/LocationSection";
 import { ProtocolsSection } from "@/components/ProtocolsSection";
 import { Testimonials } from "@/components/Testimonials";
-
+import { Container } from "@/components/Section";
 export default function Home() {
-  return (
-    <div className="relative overflow-hidden bg-background text-foreground">
-      <Header />
-      <main id="inicio">
-        <Hero />
-        <Testimonials />
+  return <div className="bg-background text-foreground">
+    <Header />
+    <main id="inicio">
+      <Hero />
+      <div className="bg-muted">
         <ProtocolsSection />
-        <Benefits />
-        <ExperienceBlock />
-        <AboutSection />
-        <FAQSection />
-        <LocationSection />
-        <FinalCTA />
-      </main>
-      <Footer />
-      <FloatingWhatsApp />
-    </div>
-  );
+        <Container className="grid items-start gap-7 pb-10 md:grid-cols-[0.85fr_1.15fr] md:gap-10 md:pb-14">
+          <Testimonials />
+          <FAQSection />
+        </Container>
+      </div>
+    </main>
+    <Footer />
+    <FloatingWhatsApp />
+  </div>;
 }

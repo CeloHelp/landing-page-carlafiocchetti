@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { GoogleTagManager } from "@next/third-parties/google";
-import { Cormorant_Garamond, Raleway } from "next/font/google";
+import { Cormorant_Garamond, Inter } from "next/font/google";
 import Script from "next/script";
 import { ConsentBanner } from "@/components/ConsentBanner";
 import { CONSENT_BOOTSTRAP_SCRIPT } from "@/lib/consent";
@@ -12,7 +12,7 @@ const cormorantGaramond = Cormorant_Garamond({
   weight: ["500", "600", "700"],
 });
 
-const raleway = Raleway({
+const inter = Inter({
   subsets: ["latin"],
   variable: "--font-body",
   weight: ["400", "500", "600", "700"],
@@ -54,7 +54,7 @@ export default function RootLayout({
   return (
     <html
       lang="pt-BR"
-      className={`${cormorantGaramond.variable} ${raleway.variable} h-full antialiased`}
+      className={`${cormorantGaramond.variable} ${inter.variable} h-full antialiased`}
     >
       <Script
         id="cookie-consent-bootstrap"
