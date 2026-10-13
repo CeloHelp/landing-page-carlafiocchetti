@@ -15,8 +15,8 @@ export function Header() {
             alt="Carla Fiocchetti Estética Facial Personalizada"
             width={380}
             height={132}
-            priority
-            className="mx-auto h-auto w-[min(280px,82vw)] sm:w-[300px] lg:w-[340px]"
+            preload
+            className="mx-auto h-auto w-[min(270px,82vw)] sm:w-[300px]"
           />
         </a>
       </Container>

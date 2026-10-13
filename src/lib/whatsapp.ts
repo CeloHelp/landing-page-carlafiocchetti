@@ -1,5 +1,5 @@
 export const WHATSAPP_MESSAGE =
-  "Olá! Encontrei a página da Carla Fiocchetti sobre limpeza de pele em Araraquara e gostaria de saber mais sobre o atendimento.";
+  "Olá! Tenho interesse em fazer uma limpeza de pele. Gostaria de saber os valores e horários disponíveis.";
 
 const configuredNumber = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "";
 export const WHATSAPP_NUMBER = configuredNumber.replace(/\D/g, "");

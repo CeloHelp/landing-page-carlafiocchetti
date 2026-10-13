@@ -29,10 +29,11 @@ export function Button({
 
   return (
     <a
+      data-whatsapp-cta={source}
       href={whatsAppUrl ?? undefined}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={ariaLabel ?? "Agendar limpeza de pele pelo WhatsApp"}
+      aria-label={ariaLabel ?? "Falar pelo WhatsApp"}
       aria-disabled={!whatsAppUrl}
       onClick={(event) => {
         if (!whatsAppUrl) {

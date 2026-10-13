@@ -1,62 +1,24 @@
 import Image from "next/image";
 import { Button } from "./Button";
-import { Container, Eyebrow, Heading, Lead } from "./Section";
-
+import { Container } from "./Section";
 export function Hero() {
-  return (
-    <section
-      aria-labelledby="hero-title"
-      className="relative py-7 pb-[58px] before:pointer-events-none before:absolute before:right-[-64px] before:bottom-6 before:h-[220px] before:w-[220px] before:rounded-full before:border before:border-border before:opacity-80 md:pt-[42px]"
-    >
-      <Container className="grid items-center gap-[34px] md:grid-cols-[1fr_0.86fr] lg:grid-cols-[minmax(0,1.03fr)_minmax(420px,0.8fr)] lg:gap-[58px]">
-        <div className="relative z-[2] grid gap-[22px]">
-          <Eyebrow>Estética facial personalizada</Eyebrow>
-          <Heading id="hero-title" level={1}>
-            Limpeza de Pele Profissional em Araraquara
-          </Heading>
-          <Lead>
-            Avaliação individualizada, extração cuidadosa e protocolos pensados para as necessidades da sua pele.
-          </Lead>
-          <p className="w-fit rounded-full border border-accent/35 bg-surface px-4 py-2 text-sm font-bold tracking-[0.01em] text-foreground shadow-card">
-            Protocolos a partir de R$ 190
-          </p>
-          <div className="grid justify-items-start gap-3">
-            <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-              <Button
-                source="hero_primary"
-                className="w-full sm:w-auto"
-                ariaLabel="Consultar horários pelo WhatsApp"
-              >
-                Consultar horários no WhatsApp
-              </Button>
-              <a
-                href="#protocolos-valores"
-                className="inline-flex min-h-13 w-full items-center justify-center rounded-brand border border-foreground bg-transparent px-5 py-[15px] text-sm font-semibold leading-none tracking-[0.02em] text-foreground no-underline transition duration-200 ease-out hover:-translate-y-0.5 hover:bg-muted focus-visible:outline-2 focus-visible:outline-offset-3 focus-visible:outline-accent sm:w-auto"
-              >
-                Ver protocolos e valores
-              </a>
-            </div>
-            <p className="text-[13px] font-semibold tracking-[0.01em] text-[color-mix(in_srgb,var(--foreground)_76%,var(--surface))]">
-              Nota 5 estrelas no Google • +100 avaliações • Atendimento em Araraquara
-            </p>
-          </div>
+  return <section aria-labelledby="hero-title" className="pb-8 pt-5 md:pb-14 md:pt-6">
+    <Container className="grid items-center gap-7 md:grid-cols-2 md:gap-16">
+      <div className="grid gap-[18px]">
+        <h1 id="hero-title" className="font-serif text-[42px] font-medium leading-[1.08] md:text-[64px]">Limpeza de pele<br />em Araraquara</h1>
+        <p className="max-w-lg text-base text-text-secondary">Limpeza profunda com extração de cravos e protocolo adaptado à sua pele.</p>
+        <div className="grid gap-1.5">
+          <p className="text-lg font-semibold">Protocolos a partir de R$ 190</p>
+          <p className="text-xs"><span aria-label="5 estrelas">★★★★★</span> +100 avaliações no Google</p>
+          <p className="text-xs text-text-secondary">Jardim Primavera · Araraquara</p>
         </div>
-
-        <figure className="relative rounded-[18px] border border-border bg-surface p-2.5 shadow-soft">
-          <Image
-            src="/assets/carla_limpeza_pele.jpg"
-            alt="Carla Fiocchetti realizando limpeza de pele profissional em ambiente de estética"
-            width={960}
-            height={1200}
-            priority
-            sizes="(min-width: 1024px) 420px, (min-width: 768px) 44vw, calc(100vw - 32px)"
-            className="aspect-[4/5] w-full rounded-brand object-cover object-center md:aspect-[4/5.15]"
-          />
-          <figcaption className="absolute right-[22px] bottom-[22px] left-[22px] rounded-brand border border-border bg-[color-mix(in_srgb,var(--surface)_88%,transparent)] px-4 py-3.5 text-[13px] font-bold tracking-[0.01em] text-foreground">
-            Cuidado real, próximo e adaptado à sua pele.
-          </figcaption>
-        </figure>
-      </Container>
-    </section>
-  );
+        <Button source="hero_primary" className="w-full" ariaLabel="Falar pelo WhatsApp">Falar pelo WhatsApp</Button>
+        <p className="text-xs text-text-secondary">Você não precisa escolher o protocolo agora.</p>
+        <a href="#protocolos-valores" className="w-fit text-sm underline-offset-4 hover:underline">Ver protocolos e valores ↓</a>
+      </div>
+      <figure className="w-full max-w-[460px] justify-self-center rounded-[18px] border border-border bg-white p-2.5 shadow-soft">
+        <Image src="/assets/carla_limpeza_pele.jpg" alt="Carla Fiocchetti realizando a extração de cravos durante um atendimento" width={930} height={1172} preload sizes="(min-width: 768px) 440px, calc(100vw - 68px)" className="h-auto w-full rounded-[9px]" />
+      </figure>
+    </Container>
+  </section>;
 }

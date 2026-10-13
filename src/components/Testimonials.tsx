@@ -1,54 +1,9 @@
 import Image from "next/image";
-import { MotionSection } from "./MotionSection";
-import { Container, Eyebrow, Heading } from "./Section";
-
-const testimonials = [
-  {
-    image: "/assets/avaliacao_google_paty.jpg",
-    alt: "Print da avaliação de Paty no Google sobre o atendimento da Carla Fiocchetti",
-  },
-  {
-    image: "/assets/avaliacao_google_franciele.jpg",
-    alt: "Print da avaliação de Franciele Garcia Baveloni no Google sobre o atendimento da Carla Fiocchetti",
-  },
-];
-
 export function Testimonials() {
-  return (
-    <MotionSection
-      id="avaliacoes"
-      aria-labelledby="testimonials-title"
-      className="scroll-mt-6 border-y border-border bg-[color-mix(in_srgb,var(--surface)_42%,var(--background))] py-14 md:py-[74px]"
-    >
-      <Container>
-        <div className="mb-[26px] grid gap-4">
-          <Eyebrow>Recomendações</Eyebrow>
-          <Heading id="testimonials-title">
-            Quem já cuidou da pele com a Carla recomenda
-          </Heading>
-          <p className="max-w-[65ch] text-text-secondary">
-            Confira duas avaliações reais publicadas no Google.
-          </p>
-        </div>
-
-        <div className="grid gap-5 md:grid-cols-2">
-          {testimonials.map((testimonial) => (
-            <figure
-              key={testimonial.image}
-              className="rounded-brand border border-border bg-surface p-2.5 shadow-card"
-            >
-              <Image
-                src={testimonial.image}
-                alt={testimonial.alt}
-                width={980}
-                height={520}
-                sizes="(min-width: 768px) 50vw, calc(100vw - 52px)"
-                className="max-h-[260px] w-full rounded-[6px] border border-border bg-surface object-contain object-top"
-              />
-            </figure>
-          ))}
-        </div>
-      </Container>
-    </MotionSection>
-  );
+  return <section id="avaliacoes" aria-labelledby="testimonials-title">
+    <h2 id="testimonials-title" className="mb-4 font-serif text-[28px] font-medium leading-tight">Quem se cuida, recomenda.</h2>
+    <figure className="rounded-xl border border-border bg-white p-2.5 shadow-card">
+      <Image src="/assets/avaliacao_google_paty.jpg" alt="Avaliação de Paty no Google, com cinco estrelas: a Carla nos transmitiu tanta confiança" width={930} height={728} sizes="(min-width: 768px) 500px, calc(100vw - 68px)" className="h-auto w-full rounded-md" />
+    </figure>
+  </section>;
 }

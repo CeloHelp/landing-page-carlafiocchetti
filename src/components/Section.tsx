@@ -5,7 +5,7 @@ type SectionProps = {
 
 export function Container({ children, className = "" }: SectionProps) {
   return (
-    <div className={`mx-auto w-[min(calc(100%_-_32px),var(--container))] ${className}`}>
+    <div className={`mx-auto w-[min(calc(100%_-_48px),var(--container))] ${className}`}>
       {children}
     </div>
   );
